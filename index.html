@@ -6,10 +6,13 @@
     <style>
       *{
         box-sizing: border-box;
-        font-family: "Arial Black", Gadget, sans-serif
+        font-family: "Arial Black", Gadget, sans-serif;
+        list-style: none;
+        font-variant: small-caps;
+        text-decoration: wavy;
       }
       body{
-        background-color: lightgoldenrodyellow;
+        background-color: royalblue;
       }
       #main{
         display: grid;
@@ -20,18 +23,20 @@
       #heading{
         display: grid;
         place-items: center;
-        background-color: aliceblue;
+        background-color: navy;
         border-radius: 10px;
         padding: 30px;
+        
       }
       h1, h3{
         margin: 0;
-        text-shadow: 3px 3px 3px lightgray;
+        text-shadow: 5px 5px 5px lightskyblue;
+        color: oldlace;
       }
       #chatbox{
         height: 400px;
         padding: 20px;
-        background-color: white;
+        background-color: lightcyan;
         border-radius: 10px;
         display: grid;
         grid-template-columns: 1fr;
@@ -46,7 +51,7 @@
         border-radius: 5px;
       }
       .message:hover{
-        background-color: lightgray;
+        background-color: lightskyblue;
       }
       input{
         width: 100%;
@@ -57,9 +62,11 @@
         font-size: 1.5rem;
         padding: 5px;
         cursor: pointer;
+        border-style: none;
+        box-shadow: 5px 5px 5px lightskyblue;
       }
       .sender{
-        color: blue;
+        color: navy;
       }
       .delete{
         cursor: pointer;
@@ -74,23 +81,13 @@
         <h3>No Friends? No Problem!</h3>
       </div>
       <div id="chatbox">
-        <div class="message" id="2">
-          <span>10:22</span>
-          <span class="sender">Myself:</span>
-          <span>Is it me you're looking for?</span>
-          <span class="delete">❌</span>
-        </div>
-        <div class="message" id="1">
-          <span>10:21</span>
-          <span class="sender">Me:</span>
-          <span>Hello?</span>
-          <span class="delete">❌</span>
-        </div>
+      
       </div>
       <form><input type="text"/></form>
       <button>I'm feeling Lonely!</button>
     </div>
-    <script>
+    <script src='lonely.js'>
+      
     </script>
   </body>
 </html>
