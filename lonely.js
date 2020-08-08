@@ -14,7 +14,7 @@ function chatSubmission(stayHome){
 
 const time = new Date().toLocaleTimeString();
 
-let newMessage = false
+let newMessage = false;
 function whatTheMessageSays(sender, theText){
      if (!theText.length) return;
      newMessage++;
